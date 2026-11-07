@@ -1,6 +1,0 @@
-[build-system]
-requires = ["setuptools>=61.0", "Cython"]
-build-backend = "setuptools.build_meta"
-
-[tool.cibuildwheel]
-build = ["cp39-win_amd64", "cp310-win_amd64", "cp311-win_amd64", "cp312-win_amd64"]
