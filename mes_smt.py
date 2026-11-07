@@ -73,7 +73,7 @@ class ExecMes:
             #data': [{'sn': 'SF43A5AG000101', 'mac': '772567882507B3'}]
             return mes_info
         else:
-            return ""
+            return None
     def get_test_log(self):
         self.status_code=""
         self.text=""
