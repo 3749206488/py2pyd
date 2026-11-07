@@ -95,9 +95,9 @@ class ExecMes:
         if ht.text["code"]==200 and ht.status_code==200 and "data" in ht.text:
             mes_info=ht.text["data"][0]
             #data': [{'sn': 'SF43A5AG000101', 'mac': '772567882507B3'}]
-            return (True,str(mes_info or ""))
+            return mes_info
         else:
-            return (False,str(mes_info or ""))
+            return None
     def mes_outbound(self,result:str,error_msg:str,test_log="")->bool:#test_values:list[dict]=[]
 
 
